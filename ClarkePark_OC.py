@@ -59,8 +59,8 @@ def clarkePark (data, rpm, currentField, windowSize, wt, delta):
     axs[1].legend()
 
     # 3 plot Vds and Vqs vs time
-    axs[2].plot(measurements['Time'], measurements['Vds'], label='Vds')
-    axs[2].plot(measurements['Time'], measurements['Vqs'], label='Vqs')
+    axs[2].plot(measurements['Time'], measurements['Vds'], label='Vqs')
+    axs[2].plot(measurements['Time'], measurements['Vqs'], label='Vds')
     axs[2].set_xlabel('Time (s)')
     axs[2].set_ylabel('Voltage (V)')
     axs[2].legend()
